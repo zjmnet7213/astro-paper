@@ -12,8 +12,36 @@ description: 记录使用 GitHub Desktop 提交和推送文章，触发 EdgeOne 
 ---
 
 本地改完文章或者在Vs code修改后，需要把改动上传到 GitHub。GitHub， 更新后，EdgeOne Pages 会自动重新部署网站。
+整个流程是这样的:VS Code 修改文章 → Ctrl + S 保存 → 本地预览博客.bat 自动预览 → 浏览器看到效果
 
-## 目录
+
+注意两点：
+本地预览博客.bat 打开的黑色窗口不要关，关了本地预览就停了。
+这只是在你电脑本地生效。想让线上网站也变，需要在 GitHub Desktop 里：
+Commit → Push origin → 等 EdgeOne 自动部署。
+
+## 本地预览批处理文件
+
+文件名：`本地预览博客.bat`
+
+把下面内容保存成这个批处理文件后，双击它就可以启动本地预览：
+
+```txt
+@echo off
+chcp 65001 >nul
+cd /d "%~dp0"
+
+echo 正在启动本地博客预览...
+echo.
+echo 如果浏览器没有自动打开，请手动访问：
+echo http://localhost:4321/
+echo.
+
+start "" "http://localhost:4321/"
+corepack pnpm dev --host 127.0.0.1
+
+pause
+```
 
 ## 用 GitHub Desktop 上传
 
