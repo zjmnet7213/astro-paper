@@ -11,7 +11,7 @@ tags:
 description: 记录使用 GitHub Desktop 提交和推送文章，触发 EdgeOne 自动部署的流程。
 ---
 
-本地改完文章后，需要把改动上传到 GitHub。GitHub 更新后，EdgeOne Pages 会自动重新部署网站。
+本地改完文章或者在Vs code修改后，需要把改动上传到 GitHub。GitHub， 更新后，EdgeOne Pages 会自动重新部署网站。
 
 ## 目录
 
