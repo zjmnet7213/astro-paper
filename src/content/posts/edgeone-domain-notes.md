@@ -29,8 +29,10 @@ EdgeOne Pages 可以直接连接 GitHub 仓库。只要把代码推送到 GitHub
 目前这个网站的流程是：
 
 ```txt
-GitHub 仓库 -> EdgeOne Pages 自动部署 -> 域名访问https://zjmnet7213.bbroot.com/
+GitHub 仓库 -> EdgeOne Pages 自动部署 -> 域名访问
 ```
+
+网站地址：[https://zjmnet7213.bbroot.com/](https://zjmnet7213.bbroot.com/)
 
 ## 免费域名的注意事项
 
